@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(33, 33, 33);
+    font-family: 'Nunito', sans-serif;;
+}
+
+.main-box {
+    margin: auto;
+    margin-top: 100px;
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    border-radius: 8px;
+    overflow:auto;
+    scrollbar-width: normal;
+    scrollbar-color: blue white;
+    padding-bottom: 15px;
+}
+
+.main-box::-webkit-scrollbar{
+    width: 10px;
+}
+
+.main-box::-webkit-scrollbar{
+    display: none;
+}
+
+.input-box {
+
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 100%;
+    height: 150px;
+}
+
+.input{
+    /* margin-left: 50px; */
+    width: 300px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #19a7cebc;
+    font-size: 20px;
+
+}
+
+.btn-search{
+    margin-top: 5px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #19A7CE;
+    border-radius: 3px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-search:hover{
+    background-color: #1190b3;
+}
+
+.second-box{
+    padding-left: 60px;
+    padding-right: 70px;
+    height: 300px;
+}
+
+.box-title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    /* background-color: #19A7CE; */
+}
+
+.main-title{
+    color: #333;
+}
+
+.bi-volume-up{
+    color: #1190b3;
+    margin-right: 30px;
+    margin-top: 23px;
+    cursor: pointer;
+}
+
+.phonetic{
+    color: #333333b5;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+.definition{
+    font-size: 20px;
+    margin-top: 50px;
+    color: #333;
+    font-size: 21px;
+}
+
+.wiki{
+    color: #0d6f8a;
+    padding-bottom: 50px;
+    font-size: 20px;
+    
+}
