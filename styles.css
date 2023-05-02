@@ -18,8 +18,6 @@ body {
     display: none;
 }
 
-
-
 .input-box {
     display: flex;
     align-items: center;
@@ -36,7 +34,6 @@ body {
     border: none;
     border-bottom: 3px solid #19a7cebc;
     font-size: 20px;
-
 }
 
 .btn-search{

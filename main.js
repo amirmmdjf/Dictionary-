@@ -39,9 +39,6 @@ searchBtn.addEventListener("click", function () {
     fetchData()
 });
 
-
-
-
 input.addEventListener('keydown', (e) => {
     if (e.key == "Enter") {
         fetchData()
