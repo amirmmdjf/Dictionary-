@@ -4,9 +4,15 @@ let title = document.querySelector('.main-title')
 let phonetic = document.querySelector('.phonetic')
 let definition = document.querySelector('.definition')
 let linkWiki = document.querySelector(".wiki")
-
 let pronouns;
 let volumeIcon = document.querySelector(".bi-volume-up")
+
+
+let deafulteAudio = new Audio('https://api.dictionaryapi.dev/media/pronunciations/en/black-uk.mp3');
+
+volumeIcon.addEventListener('click', () => {
+    deafulteAudio.play();
+});
 
 
 let apiUrl = 'https://api.dictionaryapi.dev/api/v2/entries/en/'
@@ -31,6 +37,7 @@ function showData(data) {
 
     volumeIcon.addEventListener("click", () => {
         pronouns.play();
+        deafulteAudio.pause()
     })
 }
 
@@ -39,9 +46,9 @@ searchBtn.addEventListener("click", function () {
     fetchData()
 });
 
+
 input.addEventListener('keydown', (e) => {
     if (e.key == "Enter") {
         fetchData()
     }
 })
-
